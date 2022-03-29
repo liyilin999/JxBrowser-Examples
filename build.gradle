@@ -63,13 +63,14 @@ subprojects {
     }
 
     dependencies {
-        // Cross-platform dependency
+        // Automatically picks dependency based on the operating system,
+        // and JVM architecture.
         implementation jxbrowser.currentPlatform()
 
         /*
-           For having only platform-dependent dependency:
-           1. Comment out the cross-platform dependency above.
-           2. Uncomment the dependency for your platform.
+           You can also explicitly set the required dependencies:
+           1. Comment out the dependency above.
+           2. Uncomment the necessary dependency from the list below.
         */
 
         // Windows 32-bit
